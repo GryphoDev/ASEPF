@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -15,85 +15,73 @@
     />
     <link rel="stylesheet" href="./assets/css/output.css" />
     <script src="./assets/js/burgerMenu.js" defer></script>
+    <script src="./assets/js/fadeInScroll.js" defer></script>
     <title>Maison Notre Dame</title>
   </head>
-  <body>
+  <body class="bg-[#F5F5F7]">
     <header>
       <img
-        class="m-auto px-12 sm:my-12"
-        src="./assets/images/logo/Logo People Healthy Colorful.png"
+        id="logo"
+        class="m-auto w-[350px] px-12 sm:mb-12 sm:mt-6"
+        src="./assets/images/logo/Logo_People_Healthy_Colorful-removebg-preview.png"
         alt="logo maison notre dame"
       />
-      <nav
-        class="flex flex-col items-center justify-center gap-2 sm:my-8 mx-14"
-      >
+      <nav class="mx-14 flex flex-col items-center justify-center gap-2">
         <button
-          class="sm:hidden px-4 py-2 text-white bg-[#44A047] rounded-md"
           id="burger-menu"
+          class="rounded-md bg-[#44A047] px-4 py-2 text-white sm:hidden"
         >
           <i class="fa-solid fa-bars"></i>
         </button>
+
         <div
-          class="hidden font-semibold text-sm uppercase flex-col justify-center items-center flex-wrap sm:flex sm:flex-row sm:text-base gap-2"
           id="menu"
+          class="hidden flex-col flex-wrap items-center justify-center gap-2 text-sm font-semibold uppercase sm:flex sm:flex-row sm:text-base"
         >
           <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/0 hover:text-white hover:bg-[#44A047]/100 transition duration-200"
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
             href="./index.html"
             >Acceuil</a
           >
           <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/100 text-white hover:bg-[#44A047]/100 transition duration-200"
-            href="./about.html"
-            >Présentation</a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./collectiveHousing.html"
+            >Hébergement Colectif</a
           >
           <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/0 hover:text-white hover:bg-[#44A047]/100 transition duration-200"
-            href=""
-            >Activité</a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="diversifiedAccommodation.html"
+            >Hébergement Diversifié</a
           >
           <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/0 hover:text-white hover:bg-[#44A047]/100 transition duration-200"
-            href=""
-            >Innovation Sociale</a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./samad.html"
+            >SAMAD</a
           >
           <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/0 hover:text-white hover:bg-[#44A047]/100 transition duration-200"
-            href=""
-            >Partenaires</a
+            class="rounded-md bg-[#44A047]/100 px-4 py-2 text-white transition duration-200 hover:bg-[#44A047]/100"
+            href="./sapmn.html"
+            >SAPMN</a
           >
           <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/0 hover:text-white hover:bg-[#44A047]/100 transition duration-200"
-            href=""
-            >Nous rejoindre</a
-          >
-          <a
-            class="px-4 py-3 rounded-md bg-[#44A047]/0 hover:text-white hover:bg-[#44A047]/100 transition duration-200"
-            href=""
-            >Contact</a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./job.html"
+            >Offre d'emploi</a
           >
         </div>
       </nav>
     </header>
-    <main class="py-7 px-5">
-      <div class="flex flex-col justify-between items-center">
-        <img
-          class="object-cover"
-          src="./assets/images/rowan-heuvel-bjej8BY1JYQ-unsplash.jpg"
-          alt="maison de la maison d'enfants"
-        />
-        <div>
-          <h2 class="text-2xl">L'Association</h2>
-        </div>
-      </div>
+    <main class="flex flex-col gap-4 px-4 py-4 md:gap-8 md:py-8 xl:px-0">
+      <p>sapmn</p>
     </main>
     <section
-      class="bg-[#2f3743] px-14 py-20 flex flex-col gap-20 md:flex-row md:justify-between md:text-xl"
+      id="contact"
+      class="fade-in hiddenOnLoad flex flex-col gap-20 bg-[#2f3743] px-10 py-10 md:flex-row md:justify-around md:px-14 md:py-20 md:text-xl xl:rounded-t-lg"
     >
-      <div class="text-white flex flex-col gap-10">
+      <div class="flex flex-col gap-10 text-white">
         <h2 class="text-5xl">Contactez-nous</h2>
         <div class="flex flex-col gap-10">
-          <div class="flex flex-col border-l-4 rounded-lg pl-5 gap-2">
+          <div class="flex flex-col gap-2 rounded-lg border-l-4 pl-5">
             <p class="text-xl">Maison Notre Dame</p>
             <address>
               1, rue Notre Dame <br />
@@ -102,7 +90,7 @@
           </div>
           <div class="flex flex-col gap-4">
             <div class="flex items-center gap-4">
-              <i class="text-green-500 fa-solid fa-phone text-[25px]"></i>
+              <i class="fa-solid fa-phone text-[25px] text-green-500"></i>
               <p>05.53.74.42.82</p>
             </div>
             <div class="flex items-center gap-4">
@@ -110,7 +98,7 @@
               <p>05.53.74.42.81</p>
             </div>
             <div class="flex items-center gap-4">
-              <i class="text-blue-500 text-[25px] fa-solid fa-envelope"></i>
+              <i class="fa-solid fa-envelope text-[25px] text-blue-500"></i>
               <a href="mailto:asepf@asepf.fr" class="text-blue-500 underline"
                 >asepf@asepf.fr</a
               >
@@ -129,7 +117,7 @@
         </div>
         <textarea name="" id="" class="h-60 rounded-sm p-2"></textarea>
         <button
-          class="px-4 py-3 rounded-md bg-[#44A047]/100 text-white"
+          class="rounded-md bg-[#44A047]/100 px-4 py-3 text-white"
           type="submit"
         >
           Soumettre

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <script src="./assets/js/burgerMenu.js" defer></script>
+    <script src="./assets/js/fadeInScroll.js" defer></script>
+    <title>Maison Notre Dame</title>
+  </head>
+  <body class="bg-[#F5F5F7]">
+    <header>
+      <img
+        id="logo"
+        class="m-auto w-[350px] px-12 sm:mb-12 sm:mt-6"
+        src="./assets/images/logo/Logo_People_Healthy_Colorful-removebg-preview.png"
+        alt="logo maison notre dame"
+      />
+      <nav class="mx-14 flex flex-col items-center justify-center gap-2">
+        <button
+          id="burger-menu"
+          class="rounded-md bg-[#44A047] px-4 py-2 text-white sm:hidden"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div
+          id="menu"
+          class="hidden flex-col flex-wrap items-center justify-center gap-2 text-sm font-semibold uppercase sm:flex sm:flex-row sm:text-base"
+        >
+          <a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./index.html"
+            >Acceuil</a
+          >
+          <a
+            class="rounded-md bg-[#44A047]/100 px-4 py-2 text-white transition duration-200 hover:bg-[#44A047]/100"
+            href="./collectiveHousing.html"
+            >Hébergement Colectif</a
+          >
+          <a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./diversifiedAccommodation.html"
+            >Hébergement Diversifié</a
+          >
+          <a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./samad.html"
+            >SAMAD</a
+          >
+          <a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./sapmn.html"
+            >SAPMN</a
+          >
+          <a
+            class="rounded-md bg-[#44A047]/0 px-4 py-2 transition duration-200 hover:bg-[#44A047]/100 hover:text-white"
+            href="./job.html"
+            >Offre d'emploi</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="flex flex-col gap-4 px-4 py-4 md:gap-8 md:py-8 xl:px-0">
+      <p>collectif</p>
+    </main>
+    <section
+      id="contact"
+      class="fade-in hiddenOnLoad flex flex-col gap-20 bg-[#2f3743] px-10 py-10 md:flex-row md:justify-around md:px-14 md:py-20 md:text-xl xl:rounded-t-lg"
+    >
+      <div class="flex flex-col gap-10 text-white">
+        <h2 class="text-5xl">Contactez-nous</h2>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-2 rounded-lg border-l-4 pl-5">
+            <p class="text-xl">Maison Notre Dame</p>
+            <address>
+              1, rue Notre Dame <br />
+              33220 Port Ste Foy
+            </address>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-phone text-[25px] text-green-500"></i>
+              <p>05.53.74.42.82</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-fax text-[25px] text-yellow-500"></i>
+              <p>05.53.74.42.81</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <i class="fa-solid fa-envelope text-[25px] text-blue-500"></i>
+              <a href="mailto:asepf@asepf.fr" class="text-blue-500 underline"
+                >asepf@asepf.fr</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="" class="flex flex-col gap-10 md:w-1/2">
+        <div class="flex flex-col gap-2">
+          <label class="text-white" for="name">Nom</label>
+          <input class="rounded-sm p-2" type="text" />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-white" for="name">E-mail</label>
+          <input class="rounded-sm p-2" type="text" />
+        </div>
+        <textarea name="" id="" class="h-60 rounded-sm p-2"></textarea>
+        <button
+          class="rounded-md bg-[#44A047]/100 px-4 py-3 text-white"
+          type="submit"
+        >
+          Soumettre
+        </button>
+      </form>
+    </section>
+  </body>
+</html>

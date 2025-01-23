@@ -4,14 +4,29 @@
 
 body {
   font-family: "lato";
-  color: #2f3743;
+  /* color: #2f3743; */
+  color: #264653;
   max-width: 1440px;
   margin: auto;
 }
 
 .hiddenOnLoad {
   opacity: 0;
-  transform: translateY(30px); /* Légèrement en bas */
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+.hiddenOnLoadTranslateRight {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+.hiddenOnLoadTranslateLeft {
+  opacity: 0;
+  transform: translateX(80px);
   transition:
     opacity 0.8s ease-out,
     transform 0.8s ease-out;

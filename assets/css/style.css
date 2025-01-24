@@ -65,15 +65,15 @@ body {
 }
 
 #burger-menu.active .burgerAnim {
-  animation: transparent 0.1s forwards 0.4s;
+  animation: transparent 0.1s forwards 0.2s;
 }
 
 #burger-menu.active .burgerAnim::before {
-  animation: rotateTop 1s forwards;
+  animation: rotateTop 0.7s forwards;
 }
 
 #burger-menu.active .burgerAnim::after {
-  animation: rotateBottom 1s forwards;
+  animation: rotateBottom 0.7s forwards;
 }
 
 @keyframes rotateTop {
@@ -104,7 +104,7 @@ body {
   0% {
     background-color: transparent;
   }
-  100% {
+  50% {
     background-color: white;
   }
 }
@@ -134,13 +134,13 @@ body {
 }
 
 #burger-menu.unActive .burgerAnim {
-  animation: transparentReverse 1s forwards;
+  animation: transparentReverse 2s forwards;
 }
 
 #burger-menu.unActive .burgerAnim::before {
-  animation: rotateTopReverse 1s forwards;
+  animation: rotateTopReverse 0.7s forwards;
 }
 
 #burger-menu.unActive .burgerAnim::after {
-  animation: rotateBottomReverse 1s forwards;
+  animation: rotateBottomReverse 0.7s forwards;
 }

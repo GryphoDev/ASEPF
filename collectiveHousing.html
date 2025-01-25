@@ -33,9 +33,9 @@
       <nav class="mx-14 flex flex-col items-center justify-center gap-2">
         <button
           id="burger-menu"
-          class="bg-persian_green-400 rounded-md px-4 py-2 text-white sm:hidden"
+          class="mt-3 rounded-md bg-persian_green-400 px-3 py-5 text-white sm:hidden"
         >
-          <i class="fa-solid fa-bars"></i>
+          <span class="burgerAnim"></span>
         </button>
 
         <div
@@ -43,39 +43,39 @@
           class="hidden flex-col flex-wrap items-center justify-center gap-2 text-sm font-semibold uppercase sm:flex sm:flex-row sm:text-base"
         >
           <a
-            class="bg-persian_green-400/0 hover:bg-persian_green-400/100 font-sourGummy rounded-md px-4 py-2 transition duration-200 hover:text-white"
+            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
             href="./index.html"
             >Acceuil</a
           >
           <a
-            class="bg-persian_green-400/100 hover:bg-persian_green-400/100 font-sourGummy rounded-md px-4 py-2 text-white transition duration-200"
+            class="rounded-md bg-persian_green-400/100 px-4 py-2 font-sourGummy text-white transition duration-200 hover:bg-persian_green-400/100"
             href="./collectiveHousing.html"
             >Hébergement Colectif</a
           >
           <a
-            class="bg-persian_green-400/0 hover:bg-persian_green-400/100 font-sourGummy rounded-md px-4 py-2 transition duration-200 hover:text-white"
+            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
             href="./diversifiedAccommodation.html"
             >Hébergement Diversifié</a
           >
           <a
-            class="bg-persian_green-400/0 hover:bg-persian_green-400/100 font-sourGummy rounded-md px-4 py-2 transition duration-200 hover:text-white"
+            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
             href="./samad.html"
             >SAMAD</a
           >
           <a
-            class="bg-persian_green-400/0 hover:bg-persian_green-400/100 font-sourGummy rounded-md px-4 py-2 transition duration-200 hover:text-white"
+            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
             href="./sapmn.html"
             >SAPMN</a
           >
           <a
-            class="bg-persian_green-400/0 hover:bg-persian_green-400/100 font-sourGummy rounded-md px-4 py-2 transition duration-200 hover:text-white"
+            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
             href="./job.html"
             >Offre d'emploi</a
           >
         </div>
       </nav>
       <div
-        class="mt-8 h-[600px] w-full bg-bannerCollectivePage bg-cover bg-center xl:rounded-lg"
+        class="mt-8 max-h-[600px] min-h-[300px] w-full bg-bannerCollectivePage bg-cover bg-center xl:rounded-lg"
         id="banner"
       ></div>
     </header>
@@ -85,7 +85,7 @@
       <section class="rounded-lg bg-gray-50 px-6 py-12 shadow-2xl">
         <div class="mx-auto max-w-5xl text-center">
           <h2
-            class="text-charcoal-600 font-sourGummy mb-8 text-4xl font-extrabold"
+            class="mb-8 font-sourGummy text-4xl font-extrabold text-charcoal-600"
           >
             L'hébergement collectif à la Maison Notre-Dame
           </h2>
@@ -101,10 +101,10 @@
           <div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div class="rounded-lg bg-white p-6 shadow-lg">
               <i
-                class="fa-solid fa-people-roof text-sandy_brown-700 mb-3 text-7xl"
+                class="fa-solid fa-people-roof mb-3 text-7xl text-sandy_brown-700"
               ></i>
               <h3
-                class="text-saffron-400 font-sourGummy m-auto mb-4 w-fit rounded-md px-4 text-2xl font-semibold"
+                class="m-auto mb-4 w-fit rounded-md px-4 font-sourGummy text-2xl font-semibold text-saffron-400"
               >
                 L’accueil individuel <br />
                 dans un cadre collectif
@@ -123,10 +123,10 @@
 
             <div class="rounded-lg bg-white p-6 shadow-lg">
               <i
-                class="fa-solid fa-hand-holding-heart text-sandy_brown-700 mb-3 text-7xl"
+                class="fa-solid fa-hand-holding-heart mb-3 text-7xl text-sandy_brown-700"
               ></i>
               <h3
-                class="text-saffron-400 font-sourGummy m-auto mb-4 w-fit rounded-md px-4 text-2xl font-semibold"
+                class="m-auto mb-4 w-fit rounded-md px-4 font-sourGummy text-2xl font-semibold text-saffron-400"
               >
                 La parentalité et la <br />
                 restauration du lien familial
@@ -145,10 +145,10 @@
           <div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div class="rounded-lg bg-white p-6 shadow-lg md:mb-8">
               <i
-                class="fa-solid fa-book text-sandy_brown-700 mb-3 text-7xl"
+                class="fa-solid fa-book mb-3 text-7xl text-sandy_brown-700"
               ></i>
               <h3
-                class="text-saffron-400 font-sourGummy m-auto mb-4 w-fit rounded-md px-4 text-2xl font-semibold"
+                class="m-auto mb-4 w-fit rounded-md px-4 font-sourGummy text-2xl font-semibold text-saffron-400"
               >
                 La gestion des émotions <br />
                 et le soutien éducatif
@@ -165,10 +165,10 @@
             </div>
             <div class="rounded-lg bg-white p-6 shadow-lg md:mb-8">
               <i
-                class="fa-regular fa-compass text-sandy_brown-700 mb-3 text-7xl"
+                class="fa-regular fa-compass mb-3 text-7xl text-sandy_brown-700"
               ></i>
               <h3
-                class="text-saffron-400 font-sourGummy m-auto mb-4 w-fit rounded-md px-4 text-2xl font-semibold"
+                class="m-auto mb-4 w-fit rounded-md px-4 font-sourGummy text-2xl font-semibold text-saffron-400"
               >
                 La complémentarité <br />
                 des dispositifs d’accueil
@@ -199,11 +199,11 @@
           class="hiddenOnLoadTranslateRight fade-in flex flex-col justify-between gap-4 rounded-lg bg-white p-4 shadow-2xl"
         >
           <div class="flex flex-col text-center">
-            <h2 class="text-charcoal-600 font-sourGummy text-4xl font-semibold">
+            <h2 class="font-sourGummy text-4xl font-semibold text-charcoal-600">
               Le Port
             </h2>
             <h3
-              class="text-saffron-400 font-sourGummy mt-2 text-xl font-semibold"
+              class="mt-2 font-sourGummy text-xl font-semibold text-saffron-400"
             >
               Unité d’accueil pour les 12 à 18 ans
             </h3>
@@ -223,7 +223,7 @@
           <div>
             <div class="m-4 flex flex-wrap gap-4">
               <div
-                class="ring-burnt_sienna-800 flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2"
+                class="flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2 ring-burnt_sienna-800"
               >
                 <i class="fa-solid fa-location-dot text-4xl text-blue-500"></i>
                 <adress>
@@ -245,11 +245,11 @@
           class="hiddenOnLoadTranslateLeft fade-in flex flex-col justify-between gap-4 rounded-lg bg-white p-4 shadow-2xl"
         >
           <div class="flex flex-col text-center">
-            <h2 class="text-charcoal-600 font-sourGummy text-4xl font-semibold">
+            <h2 class="font-sourGummy text-4xl font-semibold text-charcoal-600">
               Majouans
             </h2>
             <h3
-              class="text-saffron-400 font-sourGummy mt-2 text-xl font-semibold"
+              class="mt-2 font-sourGummy text-xl font-semibold text-saffron-400"
             >
               Unité d’accueil pour les 8 à 12 ans
             </h3>
@@ -271,7 +271,7 @@
           <div>
             <div class="m-4 flex flex-wrap gap-4">
               <div
-                class="ring-burnt_sienna-800 flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2"
+                class="flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2 ring-burnt_sienna-800"
               >
                 <i class="fa-solid fa-location-dot text-4xl text-blue-500"></i>
                 <adress>
@@ -294,36 +294,34 @@
           class="hiddenOnLoadTranslateRight fade-in flex flex-col justify-between gap-4 rounded-lg bg-white p-4 shadow-2xl"
         >
           <div class="flex flex-col text-center">
-            <h2 class="text-charcoal-600 font-sourGummy text-4xl font-semibold">
-              Le Port
+            <h2 class="font-sourGummy text-4xl font-semibold text-charcoal-600">
+              La Hutte
             </h2>
             <h3
-              class="text-saffron-400 font-sourGummy mt-2 text-xl font-semibold"
+              class="mt-2 font-sourGummy text-xl font-semibold text-saffron-400"
             >
-              Unité d’accueil pour les 12 à 18 ans
+              Earum eos qui sit minus, quas corrupti.
             </h3>
 
             <p class="mt-4">
-              Située au premier étage du bâtiment principal, cette unité
-              accueille des adolescents âgés de 12 à 18 ans dans un
-              environnement adapté à leurs besoins. Elle dispose de 3 chambres
-              collectives et 7 chambres individuelles, chacune équipée d’un coin
-              douche et de WC, offrant confort et intimité. Une salle
-              informatique est également à leur disposition, favorisant
-              l’apprentissage et l’autonomie. L’équipe éducative, composée de 6
-              éducateurs/trices, assure un accompagnement personnalisé et un
-              soutien quotidien pour chaque jeune.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+              maiores rem deserunt quas impedit ipsa. Perspiciatis saepe
+              consectetur excepturi molestias adipisci odit distinctio. Earum
+              eos qui sit minus, quas corrupti.Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Aut maiores rem deserunt quas
+              impedit ipsa. Perspiciatis saepe consectetur excepturi molestias
+              adipisci odit distinctio. Earum eos qui sit minus, quas corrupti.
             </p>
           </div>
           <div>
             <div class="m-4 flex flex-wrap gap-4">
               <div
-                class="ring-burnt_sienna-800 flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2"
+                class="flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2 ring-burnt_sienna-800"
               >
                 <i class="fa-solid fa-location-dot text-4xl text-blue-500"></i>
                 <adress>
-                  1 rue Notre Dame <br />
-                  33220 PORT SAINTE FOY
+                  Earum eos qui sit minus,<br />
+                  quas corrupti.
                 </adress>
               </div>
             </div>
@@ -340,11 +338,11 @@
           class="hiddenOnLoadTranslateLeft fade-in flex flex-col justify-between gap-4 rounded-lg bg-white p-4 shadow-2xl"
         >
           <div class="flex flex-col text-center">
-            <h2 class="text-charcoal-600 font-sourGummy text-4xl font-semibold">
+            <h2 class="font-sourGummy text-4xl font-semibold text-charcoal-600">
               L’escale
             </h2>
             <h3
-              class="text-saffron-400 font-sourGummy mt-2 text-xl font-semibold"
+              class="mt-2 font-sourGummy text-xl font-semibold text-saffron-400"
             >
               Unité d’accueil pour les 3 à 10 ans
             </h3>
@@ -363,7 +361,7 @@
           <div>
             <div class="m-4 flex flex-wrap gap-4">
               <div
-                class="ring-burnt_sienna-800 flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2"
+                class="flex w-fit items-center justify-center gap-2 rounded-lg p-2 px-3 text-center shadow-2xl ring-2 ring-burnt_sienna-800"
               >
                 <i class="fa-solid fa-location-dot text-4xl text-blue-500"></i>
                 <adress>
@@ -375,7 +373,7 @@
             <div class="flex flex-col gap-4">
               <img
                 class="max-h-[400px] rounded-3xl object-cover"
-                src="./assets/images/accomodation/Capture d’écran 2025-01-22 à 14.58.52.png"
+                src="./assets/images/accomodation/Capture d’écran 2025-01-22 à 15.06.04.png"
                 alt=""
               />
             </div>
@@ -435,7 +433,7 @@
         </div>
         <textarea name="" id="" class="h-60 rounded-sm p-2"></textarea>
         <button
-          class="bg-persian_green-400/100 rounded-md px-4 py-3 text-white"
+          class="rounded-md bg-persian_green-400/100 px-4 py-3 text-white"
           type="submit"
         >
           Soumettre

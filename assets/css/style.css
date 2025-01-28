@@ -46,3 +46,7 @@ blockquote {
 .icons {
   @apply mb-3 text-7xl text-sandy_brown-700;
 }
+
+.importantWord {
+  @apply font-extrabold italic text-charcoal-700;
+}

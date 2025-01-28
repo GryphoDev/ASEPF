@@ -88,6 +88,7 @@ module.exports = {
         childWithPaint:
           "url('../images/avinash-kumar-xT7OuIFew3Q-unsplash.jpg')",
         montain: "url('../images/pexels-marilierab-1804835-19998160.jpg')",
+        job: "url('../images/pexels-fauxels-3184465.jpg')",
       },
     },
   },

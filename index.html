@@ -22,7 +22,7 @@
     <script src="./assets/js/fadeInScroll.js" defer></script>
     <title>Maison Notre Dame</title>
   </head>
-  <body class="bg-[#F5F5F7]">
+  <body>
     <header>
       <img
         id="logo"
@@ -42,32 +42,32 @@
           class="hidden flex-col flex-wrap items-center justify-center gap-2 text-sm font-semibold uppercase sm:flex sm:flex-row sm:text-base"
         >
           <a
-            class="rounded-md bg-persian_green-400/100 px-4 py-2 font-sourGummy text-white transition duration-200 hover:bg-persian_green-400/100"
+            class="navLink bg-persian_green-400/100 text-white"
             href="./index.html"
             >Acceuil</a
           >
           <a
-            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
+            class="navLink bg-persian_green-400/0 hover:text-white"
             href="./collectiveHousing.html"
             >Hébergement Colectif</a
           >
           <a
-            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
+            class="navLink bg-persian_green-400/0 hover:text-white"
             href="./diversifiedAccommodation.html"
             >Hébergement Diversifié</a
           >
           <a
-            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
+            class="navLink bg-persian_green-400/0 hover:text-white"
             href="./samad.html"
             >SAMAD</a
           >
           <a
-            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
+            class="navLink bg-persian_green-400/0 hover:text-white"
             href="./sapmn.html"
             >SAPMN</a
           >
           <a
-            class="rounded-md bg-persian_green-400/0 px-4 py-2 font-sourGummy transition duration-200 hover:bg-persian_green-400/100 hover:text-white"
+            class="navLink bg-persian_green-400/0 hover:text-white"
             href="./job.html"
             >Offre d'emploi</a
           >
@@ -81,7 +81,7 @@
           id="banner-content"
           class="absolute bottom-0 left-0 right-0 top-0 flex flex-col justify-center gap-5 rounded-lg bg-black/60 px-10 py-10 text-center sm:items-center sm:px-32 md:px-52"
         >
-          <h1 class="font-sourGummy text-4xl font-bold sm:mb-8">
+          <h1 id="whiteTitle" class="bigTitle sm:mb-8">
             Bienvenue sur le site de l’Association <br />
             Maison Notre Dame
           </h1>
@@ -108,9 +108,7 @@
           alt=""
         />
         <article class="flex w-full flex-col gap-4 px-6 py-6 md:px-10">
-          <h2
-            class="text-center font-sourGummy text-4xl font-extrabold text-charcoal-600"
-          >
+          <h2 class="bigTitle text-center">
             Présentation de <br />la Maison Notre Dame
           </h2>
           <p class="text-center">
@@ -120,16 +118,10 @@
             un placement familial pour les plus jeunes.
           </p>
 
-          <p class="text-center">
-            <strong class="font-sourGummy text-xl text-saffron-400"
-              >Formes d’accueil proposées&nbsp;:</strong
-            >
-          </p>
+          <h3 class="title text-center">Formes d’accueil proposées&nbsp;:</h3>
           <ul>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="arrowList fa-solid fa-angle-right"></i>
               <p>
                 <strong>Accueil provisoire&nbsp;:</strong> Pour des situations
                 de difficultés passagères, sur demande des parents ou des jeunes
@@ -137,9 +129,7 @@
               </p>
             </li>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="arrowList fa-solid fa-angle-right"></i>
               <p>
                 <strong>Assistance éducative&nbsp;:</strong> Sur décision du
                 Juge des Enfants, pour protéger les jeunes de
@@ -147,9 +137,7 @@
               </p>
             </li>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="arrowList fa-solid fa-angle-right"></i>
               <p>
                 <strong>Accueil immédiat&nbsp;:</strong> En cas d’urgence, à la
                 demande de l’Aide Sociale à l’Enfance ou sur décision du
@@ -172,17 +160,13 @@
         <article
           class="flex w-full flex-col justify-center gap-4 px-6 py-6 md:px-10"
         >
-          <h2
-            class="text-center font-sourGummy text-4xl font-extrabold text-charcoal-600"
-          >
+          <h2 class="bigTitle text-center">
             La place des détenteurs de l'autorité parentale&nbsp;: une priorité
             fondamentale
           </h2>
-          <p class="text-center font-sourGummy text-xl text-saffron-400">
-            <strong
-              >Le travail avec les familles&nbsp;: un axe prioritaire</strong
-            >
-          </p>
+          <h3 class="title text-center">
+            Le travail avec les familles&nbsp;: un axe prioritaire
+          </h3>
 
           <p class="text-left">
             Les détenteurs de l’autorité parentale sont systématiquement
@@ -190,35 +174,25 @@
             l’accompagnement de leur enfant, telles que&nbsp;:
           </p>
 
-          <ul class="list-disc text-left">
+          <ul class="text-left">
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="fa-solid fa-angle-right arrowList"></i>
               <p>Élaboration du projet d’accueil</p>
             </li>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="fa-solid fa-angle-right arrowList"></i>
               <p>Suivi de la scolarité</p>
             </li>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="fa-solid fa-angle-right arrowList"></i>
               <p>Organisation de la santé</p>
             </li>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="fa-solid fa-angle-right arrowList"></i>
               <p>Inscription dans un club de loisirs</p>
             </li>
             <li class="flex gap-3">
-              <i
-                class="fa-solid fa-angle-right -mt-1 text-2xl text-burnt_sienna-500"
-              ></i>
+              <i class="fa-solid fa-angle-right arrowList"></i>
               <p>Préparation des vacances et des week-ends</p>
             </li>
           </ul>
@@ -254,7 +228,7 @@
       class="fade-in hiddenOnLoad flex flex-col gap-20 rounded-t-lg bg-[#2f3743] px-10 py-10 md:flex-row md:items-center md:justify-around md:px-14 md:py-20 md:text-xl"
     >
       <div class="flex flex-col gap-10 text-white">
-        <h2 class="font-sourGummy text-5xl">Contactez-nous</h2>
+        <h2 class="text-5xl">Contactez-nous</h2>
         <div class="flex flex-col gap-10">
           <div class="flex flex-col gap-2 rounded-lg border-l-4 pl-5">
             <p class="text-xl">Maison Notre Dame</p>

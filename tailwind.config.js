@@ -84,10 +84,10 @@ module.exports = {
         banner: "url('../images/artem-kniaz-DqgMHzeio7g-unsplash.jpg')",
         bannerCollectivePage:
           "url('../images/marlis-trio-akbar-eMB60hNHFL8-unsplash.jpg')",
-        childWithPaint: "url('../images/senjuti-kundu-JfolIjRnveY-unsplash.jpg')",
+        childWithPaint:
+          "url('../images/avinash-kumar-xT7OuIFew3Q-unsplash.jpg')",
       },
-
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };

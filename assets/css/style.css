@@ -1,146 +1,48 @@
+@import "./animation.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
+  background-color: #f5f5f7;
   font-family: "lato";
   color: #264653;
   max-width: 1440px;
   margin: auto;
 }
 
-.hiddenOnLoad {
-  opacity: 0;
-  transform: translateY(30px);
-  transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
-}
-.hiddenOnLoadTranslateRight {
-  opacity: 0;
-  transform: translateX(-30px);
-  transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
-}
-.hiddenOnLoadTranslateLeft {
-  opacity: 0;
-  transform: translateX(30px);
-  transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+h1,
+h2,
+h3,
+a,
+blockquote {
+  font-family: "Sour Gummy";
 }
 
-.visible {
-  opacity: 1;
-  transform: translateY(0);
+#whiteTitle {
+  @apply text-white;
 }
 
-.burgerAnim {
-  display: block;
-  position: relative;
-  height: 2px;
-  width: 20px;
-  border-radius: 10px;
-  background-color: white;
+.bigTitle {
+  @apply text-3xl font-bold text-charcoal-600 sm:text-4xl;
 }
 
-.burgerAnim::before,
-.burgerAnim::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  height: 2px;
-  width: 20px;
-  border-radius: 10px;
-  background-color: white;
+.title {
+  @apply text-xl text-saffron-400;
 }
 
-.burgerAnim::before {
-  transform: translateY(-5px);
+.navLink {
+  @apply rounded-md px-4 py-2 transition duration-200 hover:bg-persian_green-400/100;
 }
 
-.burgerAnim::after {
-  transform: translateY(5px);
+.arrowList {
+  @apply -mt-1 text-2xl text-burnt_sienna-500;
 }
 
-#burger-menu.active .burgerAnim {
-  animation: transparent 0.1s forwards 0.2s;
+.citation {
+  @apply flex flex-col gap-2 rounded-lg bg-white px-10 py-8 text-center text-3xl font-thin italic shadow-2xl;
 }
 
-#burger-menu.active .burgerAnim::before {
-  animation: rotateTop 0.7s forwards;
-}
-
-#burger-menu.active .burgerAnim::after {
-  animation: rotateBottom 0.7s forwards;
-}
-
-@keyframes rotateTop {
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: rotate(40deg);
-  }
-}
-
-@keyframes rotateBottom {
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: rotate(-40deg);
-  }
-}
-
-@keyframes transparent {
-  100% {
-    background-color: transparent;
-  }
-}
-
-@keyframes transparentReverse {
-  0% {
-    background-color: transparent;
-  }
-  50% {
-    background-color: white;
-  }
-}
-
-@keyframes rotateTopReverse {
-  0% {
-    transform: rotate(40deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes rotateBottomReverse {
-  0% {
-    transform: rotate(-40deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: translateY(5px);
-  }
-}
-
-#burger-menu.unActive .burgerAnim {
-  animation: transparentReverse 2s forwards;
-}
-
-#burger-menu.unActive .burgerAnim::before {
-  animation: rotateTopReverse 0.7s forwards;
-}
-
-#burger-menu.unActive .burgerAnim::after {
-  animation: rotateBottomReverse 0.7s forwards;
+.icons {
+  @apply mb-3 text-7xl text-sandy_brown-700;
 }

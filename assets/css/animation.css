@@ -1,0 +1,121 @@
+.hiddenOnLoad {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.burgerAnim {
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.burgerAnim::before,
+.burgerAnim::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 2px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.burgerAnim::before {
+  transform: translateY(-5px);
+}
+
+.burgerAnim::after {
+  transform: translateY(5px);
+}
+
+#burger-menu.active .burgerAnim {
+  animation: transparent 0.1s forwards 0.2s;
+}
+
+#burger-menu.active .burgerAnim::before {
+  animation: rotateTop 0.7s forwards;
+}
+
+#burger-menu.active .burgerAnim::after {
+  animation: rotateBottom 0.7s forwards;
+}
+
+@keyframes rotateTop {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes rotateBottom {
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes transparent {
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes transparentReverse {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
+
+@keyframes rotateTopReverse {
+  0% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes rotateBottomReverse {
+  0% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+#burger-menu.unActive .burgerAnim {
+  animation: transparentReverse 2s forwards;
+}
+
+#burger-menu.unActive .burgerAnim::before {
+  animation: rotateTopReverse 0.7s forwards;
+}
+
+#burger-menu.unActive .burgerAnim::after {
+  animation: rotateBottomReverse 0.7s forwards;
+}

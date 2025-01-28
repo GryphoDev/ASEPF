@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./about.html",
     "./samad.html",
+    "./sapmn.html",
     "./job.html",
     "./collectiveHousing.html",
     "./diversifiedAccomodation.html",
@@ -86,6 +87,7 @@ module.exports = {
           "url('../images/marlis-trio-akbar-eMB60hNHFL8-unsplash.jpg')",
         childWithPaint:
           "url('../images/avinash-kumar-xT7OuIFew3Q-unsplash.jpg')",
+        montain: "url('../images/pexels-marilierab-1804835-19998160.jpg')",
       },
     },
   },

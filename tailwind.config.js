@@ -82,13 +82,13 @@ module.exports = {
         xl: "1440px",
       },
       backgroundImage: {
-        banner: "url('../images/artem-kniaz-DqgMHzeio7g-unsplash.jpg')",
+        banner: "url('../images/artem-kniaz-DqgMHzeio7g-unsplash.webp')",
         bannerCollectivePage:
-          "url('../images/marlis-trio-akbar-eMB60hNHFL8-unsplash.jpg')",
+          "url('../images/marlis-trio-akbar-eMB60hNHFL8-unsplash.webp')",
         childWithPaint:
-          "url('../images/avinash-kumar-xT7OuIFew3Q-unsplash.jpg')",
-        montain: "url('../images/pexels-marilierab-1804835-19998160.jpg')",
-        job: "url('../images/pexels-fauxels-3184465.jpg')",
+          "url('../images/avinash-kumar-xT7OuIFew3Q-unsplash.webp')",
+        montain: "url('../images/pexels-marilierab-1804835-19998160.webp')",
+        job: "url('../images/pexels-fauxels-3184465.webp')",
       },
     },
   },

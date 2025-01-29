@@ -40,7 +40,7 @@
 
         <div
           id="menu"
-          class="hidden flex-col flex-wrap items-center justify-center gap-2 text-sm font-semibold uppercase sm:flex sm:flex-row sm:text-base"
+          class="flex max-h-0 flex-col items-center justify-center gap-2 overflow-hidden text-sm font-semibold uppercase sm:flex sm:max-h-fit sm:flex-row sm:flex-wrap sm:text-base"
         >
           <a
             class="navLink bg-persian_green-400/0 hover:text-white"
@@ -536,7 +536,11 @@
           </a>
         </div>
       </div>
-      <form action="https://formspree.io/f/xnnjdkbb" method="POST" class="flex flex-col gap-10 md:w-1/2">
+      <form
+        action="https://formspree.io/f/xnnjdkbb"
+        method="POST"
+        class="flex flex-col gap-10 md:w-1/2"
+      >
         <div class="flex flex-col gap-2">
           <label class="text-white" for="name">Nom</label>
           <input class="rounded-sm p-2" type="text" name="name" id="name" />
@@ -545,7 +549,11 @@
           <label class="text-white" for="email">E-mail</label>
           <input class="rounded-sm p-2" type="text" name="email" id="email" />
         </div>
-        <textarea name="message" id="message" class="h-60 rounded-sm p-2"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          class="h-60 rounded-sm p-2"
+        ></textarea>
         <button
           class="rounded-md bg-persian_green-400/100 px-4 py-3 text-white"
           type="submit"

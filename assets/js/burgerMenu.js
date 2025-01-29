@@ -3,8 +3,7 @@ const burgerBtn = document.getElementById("burger-menu");
 const burgerAnim = document.querySelector(".burgerAnim");
 
 burgerBtn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-  menu.classList.toggle("flex");
+  menu.classList.toggle("open");
   burgerBtn.classList.toggle("active");
   if (!burgerBtn.classList.contains("active")) {
     burgerBtn.classList.add("unActive");

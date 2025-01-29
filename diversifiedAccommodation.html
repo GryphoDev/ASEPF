@@ -344,16 +344,24 @@
           </a>
         </div>
       </div>
-      <form action="" class="flex flex-col gap-10 md:w-1/2">
+      <form
+        action="https://formspree.io/f/xnnjdkbb"
+        method="POST"
+        class="flex flex-col gap-10 md:w-1/2"
+      >
         <div class="flex flex-col gap-2">
           <label class="text-white" for="name">Nom</label>
-          <input class="rounded-sm p-2" type="text" />
+          <input class="rounded-sm p-2" type="text" name="name" id="name" />
         </div>
         <div class="flex flex-col gap-2">
-          <label class="text-white" for="name">E-mail</label>
-          <input class="rounded-sm p-2" type="text" />
+          <label class="text-white" for="email">E-mail</label>
+          <input class="rounded-sm p-2" type="text" name="email" id="email" />
         </div>
-        <textarea name="" id="" class="h-60 rounded-sm p-2"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          class="h-60 rounded-sm p-2"
+        ></textarea>
         <button
           class="rounded-md bg-persian_green-400/100 px-4 py-3 text-white"
           type="submit"

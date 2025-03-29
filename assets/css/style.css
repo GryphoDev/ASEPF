@@ -19,6 +19,10 @@ blockquote {
   font-family: "Sour Gummy";
 }
 
+a {
+  @apply transition-opacity duration-300 hover:opacity-80;
+}
+
 .textShadow {
   text-shadow: 4px 4px 6px #a8bec6;
 }
